@@ -1,0 +1,59 @@
+# .gitignore for Lyra Voice Assistant
+
+# Virtual environment
+.venv
+offline-ai-env/
+
+# Poetry
+.poetry/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Node.js dependencies
+gui/node_modules/
+
+# Log files
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.pytest_tmp/
+
+# Lyra notes file
+lyra_notes.md
+
+# Conversation history
+backend/memory/conversations.json
+backend/memory/test_memory.json
+
+# AI Models - these are large and should not be in git
+models/
+!models/stt/faster-whisper-medium/README.md

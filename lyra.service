@@ -1,0 +1,13 @@
+[Unit]
+Description=Lyra AI Agent
+After=network.target
+
+[Service]
+Type=simple
+User=lunaris
+WorkingDirectory=/home/lunaris/Projects/lyra-voice-assistant/backend
+ExecStart=/home/lunaris/.local/bin/poetry run python main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

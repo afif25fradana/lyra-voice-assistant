@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyra</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield" id="starfield"></div>
+
+    <!-- Hotkey Indicator -->
+    <div class="hotkey-hint" style="display: none;">
+        <i class="fas fa-keyboard"></i>
+        <span class="key">Ctrl</span>+<span class="key">Space</span>
+        to activate
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h1>Lyra</h1>
+            </div>
+            <div class="status-display">
+                <span id="status-dot" class="status-dot disconnected"></span>
+                <span id="status-text">Disconnected</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-layout">
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <div class="chat-header">
+                    <h2>
+                        <i class="fas fa-comments"></i>
+                        Conversation
+                    </h2>
+                </div>
+                
+                <div id="chat-history" class="messages-container">
+                    <!-- Messages will appear here -->
+                </div>
+                
+                <div class="input-section">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="user-input" 
+                            class="input-field"
+                            placeholder="Ask me anything or use voice input..."
+                        />
+                        <button id="mic-button" class="control-button mic-button" title="Voice input">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <button id="send-button" class="control-button send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Panel -->
+            <div class="skills-panel">
+                <div class="skills-header">
+                    <h2>
+                        <i class="fas fa-magic"></i>
+                        Available Skills
+                    </h2>
+                </div>
+                <div id="skills-list" class="skills-list">
+                    <!-- Skills will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
