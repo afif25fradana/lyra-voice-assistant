@@ -125,10 +125,7 @@ I've planned this project in 5 phases over 20 weeks:
   - AUR package for Arch/EndeavourOS
   - Documentation and tutorials
 
-Detailed planning can be found in [lyra_planning_md.md](lyra_planning_md.md) and task breakdown in [lyra_tasks_md.md](lyra_tasks_md.md).
-
-## Contributing
-This is primarily a personal learning project, but contributions are welcome! If you have ideas for improvements or find a bug, please feel free to open an issue or submit a pull request. Check out the [development plan](lyra_planning_md.md) to see where the project is headed.
+Detailed planning can be found in [lyra_planning.md](lyra_planning.md) and task breakdown in [lyra_tasks.md](lyra_tasks.md).
 
 ## License
 MIT - do whatever you want with it :)
